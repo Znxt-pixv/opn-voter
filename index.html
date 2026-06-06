@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OPN Voter</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>🗳️ OPN Voter</h1>
+        <p class="subtitle">Decentralized voting on OPN Chain</p>
+
+        <!-- Tombol connect wallet -->
+         <button id="connectBtn" onclick="connectWallet()">
+            Connect wallet
+         </button>
+         <p id="walletAddress"></p>
+         
+         <!-- Area voting -->
+          <div class="cards">
+            <div class="card">
+                <h2>🔵 Proposal A</h2>
+                <p>Build a DEX on OPN Chain</p>
+                <p class="votes" id="votesA">Votes: 0</p>
+                <button onclick="vote('A')">Vote</button>
+            </div>
+            
+            <div class="card">
+                <h2>🟣 Proposal B</h2>
+                <p>Build an NFT Marketplace</p>
+                <p class="votes" id="votesB">Votes: 0</p>
+                <button onclick="vote('B')">Vote</button>
+            </div>
+
+            <div class="card">
+                <h2>🟢 Proposal C</h2>
+                <p>Build a Lending Protocol</p>
+                <p class="votes" id="votesC">Votes: 0</p>
+                <button onclick="vote('C')">Vote</button>
+            </div>
+          </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>+
+</html>
